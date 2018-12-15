@@ -8,6 +8,8 @@ public class Szkolenie {
     int liczbaUczestnikow;
     String nazwa;
     LocalDate data;
+    Adres;
+
 
     //1. tworzenie nowego obiektu
     //budowa konstruktora jest to public/privet [nazwa][(lista parametrow)]
@@ -17,7 +19,7 @@ public class Szkolenie {
         System.out.println("Wykonal sie konstruktor bezparametryczny");
     }
     // konstruktor parametryczny
-    public Szkolenie (String nazwa, int liczbaUczestnikow, double cena, LocalDate data ){
+    public Szkolenie (String nazwa, int liczbaUczestnikow, double cena, LocalDate data,Adres ){
         System.out.println("Wykonal sie konstruktor parametryczny");
         this.nazwa=nazwa;
         this.liczbaUczestnikow = liczbaUczestnikow;
@@ -35,6 +37,7 @@ public class Szkolenie {
         System.out.printf("\t Cena Szkolenia: %.2f PLN\n", this.cena);
         System.out.println("\t Liczba uczestnikow "+ this.liczbaUczestnikow);
         System.out.println("Data Szkolenia "+ this.data);
+
     }
 
 
